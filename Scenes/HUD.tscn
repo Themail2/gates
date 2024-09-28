@@ -1,0 +1,37 @@
+[gd_scene load_steps=9 format=3 uid="uid://ujr7vyypu24w"]
+
+[ext_resource type="Script" path="res://Scripts/HUDScript.cs" id="1_wxtp8"]
+[ext_resource type="Texture2D" uid="uid://c2p2e2nds1lu" path="res://Assets/NAND.PNG" id="2_nl2br"]
+[ext_resource type="Texture2D" uid="uid://ddj666wms35f7" path="res://Assets/SwitchIcon.PNG" id="3_vo8pi"]
+[ext_resource type="Texture2D" uid="uid://c6kt40f725ywx" path="res://Assets/XOR.png" id="4_i2574"]
+[ext_resource type="Texture2D" uid="uid://b4btcujwa26yf" path="res://Assets/AND.PNG" id="5_qolof"]
+[ext_resource type="Texture2D" uid="uid://wa7n3ae0wnqi" path="res://Assets/OR.PNG" id="6_3wbbp"]
+[ext_resource type="Texture2D" uid="uid://bb3s6o0losu65" path="res://Assets/NOT.PNG" id="7_gspt4"]
+[ext_resource type="Texture2D" uid="uid://b3dnu8wxbdoyu" path="res://Assets/LightIcon.PNG" id="8_s6oeu"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_wxtp8")
+
+[node name="ItemList" type="ItemList" parent="."]
+offset_left = 1.0
+offset_right = 188.0
+offset_bottom = 220.0
+allow_search = false
+auto_height = true
+item_count = 7
+item_0/text = "NAND"
+item_0/icon = ExtResource("2_nl2br")
+item_1/text = "Switch"
+item_1/icon = ExtResource("3_vo8pi")
+item_2/text = "XOR"
+item_2/icon = ExtResource("4_i2574")
+item_3/text = "AND"
+item_3/icon = ExtResource("5_qolof")
+item_4/text = "OR"
+item_4/icon = ExtResource("6_3wbbp")
+item_5/text = "NOT"
+item_5/icon = ExtResource("7_gspt4")
+item_6/text = "Light"
+item_6/icon = ExtResource("8_s6oeu")
+
+[connection signal="item_clicked" from="ItemList" to="." method="GateSelected"]

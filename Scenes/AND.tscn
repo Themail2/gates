@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://61gvf72k302p"]
+
+[ext_resource type="Script" path="res://Scripts/ANDGate.cs" id="1_gqcih"]
+[ext_resource type="Texture2D" uid="uid://b4btcujwa26yf" path="res://Assets/AND.PNG" id="2_6wrv2"]
+
+[node name="NAND" type="Node2D"]
+script = ExtResource("1_gqcih")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = -50.0
+offset_top = -50.0
+offset_right = 50.0
+offset_bottom = 50.0
+texture_normal = ExtResource("2_6wrv2")
+
+[node name="InputOne" type="Button" parent="."]
+offset_left = -50.0
+offset_top = -31.0
+offset_right = -32.0
+offset_bottom = -13.0
+
+[node name="InputTwo" type="Button" parent="."]
+offset_left = -50.0
+offset_top = 11.0
+offset_right = -31.0
+offset_bottom = 29.0
+
+[node name="Output" type="Button" parent="."]
+offset_left = 26.0
+offset_top = -12.0
+offset_right = 48.0
+offset_bottom = 9.0

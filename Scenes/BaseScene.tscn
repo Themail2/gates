@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cv00v255h22j7"]
+
+[ext_resource type="Script" path="res://Scripts/GameManager.cs" id="1_ymsrx"]
+[ext_resource type="Script" path="res://Scripts/CameraController.cs" id="2_ouhda"]
+
+[node name="BaseScene" type="Node2D"]
+script = ExtResource("1_ymsrx")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("2_ouhda")

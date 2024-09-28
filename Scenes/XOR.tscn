@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8gqu2no3nodn"]
+
+[ext_resource type="Script" path="res://Scripts/XORGate.cs" id="1_653sj"]
+[ext_resource type="Texture2D" uid="uid://c6kt40f725ywx" path="res://Assets/XOR.png" id="1_opiwj"]
+
+[node name="XOR" type="Node2D"]
+script = ExtResource("1_653sj")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("1_opiwj")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 6.0
+offset_top = 21.0
+offset_right = 21.0
+offset_bottom = 36.0
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 6.0
+offset_top = 64.0
+offset_right = 22.0
+offset_bottom = 80.0
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 85.0
+offset_top = 43.0
+offset_right = 99.0
+offset_bottom = 57.0
